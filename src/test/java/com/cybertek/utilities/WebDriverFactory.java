@@ -7,12 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverFactory {
 
-//            write a static method that makes a string parameter
-//            based on value of the parameter
-//            the method must return chromedriver or firefoxdriver object
-//            name getDriver
-
-    public static WebDriver getDriver(String browserType) {
+    public static WebDriver GetDriver(String browserType) {
         WebDriver driver = null;
 
         switch (browserType.toLowerCase()) {
@@ -23,10 +18,11 @@ public class WebDriverFactory {
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
+                break;
 
         }
 
-
         return driver;
     }
+
 }

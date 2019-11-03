@@ -5,17 +5,11 @@ import org.openqa.selenium.WebDriver;
 
 public class CallWebDriverFactory {
 
-    public static WebDriverFactory getDriver("chrome") {
-        WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://google.com");
+    public static void main(String[] args) {
 
-        return driver = null;
+        WebDriver driver=WebDriverFactory.GetDriver("chrome");
 
-    }
-
-
-
+        driver.get("http://www.google.com");
 
     }
-
 }
