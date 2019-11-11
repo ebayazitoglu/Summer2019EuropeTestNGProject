@@ -1,4 +1,4 @@
-package com.cybertek.tests.day2_webdriver_basics;
+package com.cybertek.tests.d2_webdriver_basics;
 
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;

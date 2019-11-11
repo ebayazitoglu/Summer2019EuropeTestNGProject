@@ -1,11 +1,9 @@
-package com.cybertek.tests.day3_webelement_intro;
+package com.cybertek.tests.d3_webelement_intro;
 
 import com.cybertek.utilities.WebDriverFactory;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class VerifyURLNotChanged {
     public static void main(String[] args) {

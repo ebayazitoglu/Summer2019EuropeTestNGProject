@@ -1,9 +1,8 @@
-package com.cybertek.tests.day1_basic_navigation;
+package com.cybertek.tests.d1_basic_navigation;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class basic_navigation {
 
