@@ -10,7 +10,7 @@ public class XpathTest {
     public static void main(String[] args) {
 
 
-        WebDriver driver = WebDriverFactory.GetDriver("firefox");
+        WebDriver driver = WebDriverFactory.GetDriver("chrome");
         driver.manage().window().maximize();
 
         driver.get("http://practice.cybertekschool.com/multiple_buttons");
