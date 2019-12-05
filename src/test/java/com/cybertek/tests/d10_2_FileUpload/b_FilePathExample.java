@@ -42,6 +42,7 @@ public class b_FilePathExample {
     public void test2(){
         driver.get("http://practice.cybertekschool.com/upload");
         String projectPath = System.getProperty("user.dir");
+
         String relativePath = "src/test/resources/testfile.txt";
         String filePath = projectPath+"/"+relativePath;
         driver.findElement(By.name("file")).sendKeys(filePath);
