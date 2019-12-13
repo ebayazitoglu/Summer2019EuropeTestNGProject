@@ -1,4 +1,4 @@
-package com.cybertek.tests.d2_webdriver_basics;
+package com.cybertek.tests;
 
 import com.github.javafaker.Faker;
 

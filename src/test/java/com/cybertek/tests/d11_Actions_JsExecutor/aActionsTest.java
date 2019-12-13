@@ -1,7 +1,9 @@
 package com.cybertek.tests.d11_Actions_JsExecutor;
 
+import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -37,6 +39,19 @@ public class aActionsTest {
         Assert.assertTrue(driver.findElement(By.linkText("View profile")).isDisplayed(),"VERIFY THE LINK TEXT FOR IMAGE ONE");
 
 
+    }
+    @Test
+    public void StaleTest(){
+        driver.get(ConfigurationReader.get("url"));
+        WebElement input=driver.findElement(By.name("q"));
+        input.sendKeys("Selenium"+ Keys.ENTER);
+
+        WebElement results=driver.findElement(By.id("resultStats"));
+        Assert.assertTrue(results.isDisplayed(),"RESULTS IS DISPLAYED");
+
+        driver.navigate().back();
+        input=driver.findElement(By.name("q"));
+        input.sendKeys("Java"+Keys.ENTER);
     }
 
 }
